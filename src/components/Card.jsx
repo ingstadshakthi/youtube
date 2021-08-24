@@ -19,7 +19,7 @@ function Card(props) {
         />
       </div>
       <div className="card-detail">
-        <h4
+        <h5
           className="title"
           onClick={() => {
             localStorage.setItem(
@@ -30,12 +30,12 @@ function Card(props) {
           }}
         >
           {props.title}
-        </h4>
+        </h5>
         <div className="viewAndTime">
           <h6>{props.timeStamp}</h6>
         </div>
         <div className="channelDetail">
-          <div>{props.channelTitle}</div>
+          <h6>{props.channelTitle}</h6>
         </div>
         <p className="desc">{props.description}</p>
       </div>

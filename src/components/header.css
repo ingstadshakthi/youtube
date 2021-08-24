@@ -2,16 +2,17 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .header > .logo {
   flex: 0.2;
 }
 img {
-  width: 8rem;
+  width: 10vw;
 }
 .header > .search {
-  flex: 0.5;
+  flex: 0.6;
 }
-.profile {
+.header > .profile {
   flex: 0.2;
 }

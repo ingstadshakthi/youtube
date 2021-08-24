@@ -3,16 +3,18 @@
   justify-content: space-between;
   border: none;
   border-radius: 10px;
-  margin: 10px;
+  margin: 15px;
+  flex-wrap: wrap;
 }
 .listCard > .card-photo {
-  flex: 0.32;
+  flex: 0.3;
   margin: auto;
   cursor: pointer;
 }
 .listCard > .card-photo > img {
-  width: 25vw;
-  height: 25vh;
+  width: 100%;
+  min-width: 350px;
+  height: 250px;
   border-radius: 10px;
 }
 .card-detail {
@@ -20,6 +22,7 @@
   flex-direction: column;
   flex: 0.66;
   flex-wrap: wrap;
+  min-width: 350px;
 }
 .card-detail > .title {
   cursor: pointer;
@@ -29,4 +32,8 @@
 }
 .card-detail > .channelDetail {
   display: flex;
+}
+h6,
+p {
+  color: gray;
 }

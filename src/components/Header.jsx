@@ -22,9 +22,8 @@ export default class Header extends Component {
             />
           </Link>
         </div>
-
         <form className="search" onSubmit={this.onFormSubmit}>
-            <div className="input-group">
+            <div className="input-group" style={{flexWrap:"nowrap"}}>
               <input
                 value={this.state.searchInput}
                 onChange={(event) => {
@@ -37,13 +36,17 @@ export default class Header extends Component {
                 aria-label="Search"
                 aria-describedby="search-addon"
                 required
+                style={{minWidth:"200px"}}
               />
               <button type="submit" className="btn btn-outline-primary">
                 Search
               </button>
             </div>
+
         </form>
-        <div className="profile"></div>
+        <div className="profile">
+
+        </div>
       </header>
     );
   }
