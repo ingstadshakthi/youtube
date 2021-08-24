@@ -13,7 +13,7 @@
 }
 .listCard > .card-photo > img {
   width: 100%;
-  min-width: 330px;
+  min-width: 300px;
   height: 250px;
   border-radius: 10px;
 }
@@ -22,7 +22,7 @@
   flex-direction: column;
   flex: 0.66;
   flex-wrap: wrap;
-  min-width: 330px;
+  min-width: 300px;
 }
 .card-detail > .title {
   cursor: pointer;
