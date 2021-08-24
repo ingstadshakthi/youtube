@@ -12,7 +12,7 @@
   cursor: pointer;
 }
 .listCard > .card-photo > img {
-  width: 100%;
+  width: 900%;
   min-width: 300px;
   height: 250px;
   border-radius: 10px;
