@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.app {
+  margin: auto;
+  padding: 20px;
+  max-width: 1230px;
+  min-height: 100vh;
+  box-shadow: 0 0 35px #eee;
+}

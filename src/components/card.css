@@ -1,0 +1,32 @@
+.listCard {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+.listCard > .card-photo {
+  flex: 0.32;
+  margin: auto;
+  cursor: pointer;
+}
+.listCard > .card-photo > img {
+  width: 25vw;
+  height: 25vh;
+  border-radius: 10px;
+}
+.card-detail {
+  display: flex;
+  flex-direction: column;
+  flex: 0.66;
+  flex-wrap: wrap;
+}
+.card-detail > .title {
+  cursor: pointer;
+}
+.card-detail > .viewAndTime {
+  display: flex;
+}
+.card-detail > .channelDetail {
+  display: flex;
+}
