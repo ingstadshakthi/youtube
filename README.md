@@ -36,7 +36,7 @@
 To use this project, follow these steps:
 
 1. Clone the repository.
-2. Install the dependencies using `npm install`.
+2. Install the dependencies using `npm install && npm install --prefix frontend`.
 3. Create Youtube API from google developers
 4. Subscribe that api and copy the api key.
 5. Create a `.env` file in the root directory and add your YouTube API key as `API_KEY_1=<your-api-key>`.
