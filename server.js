@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 5000;
 import dotenv from 'dotenv';
 dotenv.config();
 import cors from 'cors';
-
+import path from 'path';
 
 app.use(cors());
 
@@ -54,5 +54,19 @@ app.get('/api/search/:id', async (req, res) => {
     }
 
 });
+
+if (process.env.NODE_ENV === 'production') {
+    const __dirname = path.resolve();
+    app.use(express.static(path.join(__dirname, '/frontend/dist')));
+
+    app.get('*', (req, res) =>
+        res.sendFile(path.resolve(__dirname, 'frontend', 'dist', 'index.html'))
+    );
+} else {
+    const __dirname = path.resolve();
+    app.get('/', (req, res) => {
+        res.send('API is running....');
+    });
+}
 
 app.listen(PORT, console.log("Server Started"));
