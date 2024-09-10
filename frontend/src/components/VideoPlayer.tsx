@@ -6,7 +6,7 @@ function VideoPlayer() {
   return (
     <div className="w-full overflow-y-scroll overflow-hidden aspect-video px-8 py-2"
       style={{ maxHeight: 'calc(100vh - 56px)', width: 'calc(100% - 20px)' }}>
-      <ReactPlayer height='100%' width='100%' controls url={videoUrl} />
+      <ReactPlayer height='100%' width='100%' controls url={videoUrl} autoplay />
     </div >
   );
 }
